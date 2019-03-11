@@ -18,7 +18,7 @@ class GeneralError(Exception):
 CHROME_CRX_URL = 'https://clients2.google.com/service/update2/crx?response=redirect&'+ \
                  'prodversion={chrome_version}&acceptformat=crx2&x=id%3D{extension_id}%26uc'
 
-def get_extension(extension_url, chrome_version='70.0.3538.77'):
+def get_extension(extension_url, chrome_version='72.0.3626.119'):
     ''' extension_url - URL to page in Google Chrome Webstore '''
     # parsing without urlparse
     ext_id = extension_url.split('/')[6]
